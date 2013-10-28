@@ -43,6 +43,8 @@ m = length(y);
 fprintf('First 10 examples from the dataset: \n');
 fprintf(' x = [%.0f %.0f], y = %.0f \n', [X(1:10,:) y(1:10,:)]');
 
+%'
+
 fprintf('Program paused. Press enter to continue.\n');
 pause;
 
@@ -95,7 +97,7 @@ plot(1:numel(J_history), J_history, '-b', 'LineWidth', 2);
 xlabel('Number of iterations');
 ylabel('Cost J');
 
-% Display gradient descent's result
+% Display gradient descent''s result
 fprintf('Theta computed from gradient descent: \n');
 fprintf(' %f \n', theta);
 fprintf('\n');
