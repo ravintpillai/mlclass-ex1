@@ -4,10 +4,10 @@ function J = computeCostMulti(X, y, theta)
 %   parameter for linear regression to fit the data points in X and y
 
 % Initialize some useful values
-m = length(y); % number of training examples
+m = size(y)(1); % number of training examples
 
 % You need to return the following variables correctly 
-J = 0;
+J = (1/(2*m))*sum(((X * theta)-y).^2);;
 
 % ====================== YOUR CODE HERE ======================
 % Instructions: Compute the cost of a particular choice of theta
